@@ -8,7 +8,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 from os import utime as os_utime
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, ClassVar
+from typing import TYPE_CHECKING, Any, ClassVar, List, Optional
 
 from orjson import loads
 from pydantic import BaseModel
@@ -287,3 +287,4 @@ class Conversation(BaseModel):
             second=0,
             microsecond=0,
         )
+    
